@@ -6,11 +6,11 @@ class Mytimer extends Component {
   }
 
   componentDidMount() {
-    this.banane = setInterval(() => this.tick(), 1000);
+    setInterval(() => this.tick(), 1000);
   }
 
   componentWillUnmount() {
-    clearInterval(this.banane);
+    clearInterval();
   }
 
   tick() {
