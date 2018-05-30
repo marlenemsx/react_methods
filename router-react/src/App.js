@@ -6,6 +6,7 @@ import { Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
 import History from "./History";
+import Mytimer from "./Mytimer";
 
 class App extends Component {
   render() {
@@ -28,7 +29,7 @@ class App extends Component {
               Home
             </NavLink>
           </li>
-          <li onclick="myFunction()">
+          <li>
             <NavLink
               to="/notre-history"
               activeStyle={{
@@ -45,6 +46,8 @@ class App extends Component {
         {/*********** mes routes **************/}
         <Route exact path="/" component={Home} />
         <Route path="/notre-history" component={History} />
+
+        <Mytimer />
       </div>
     );
   }
